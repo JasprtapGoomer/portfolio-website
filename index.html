@@ -298,126 +298,126 @@
       </div>
     </section>
 
-    <!-- CONTACT -->
-    <section id="contact" class="contact">
-      <div class="container">
-        <h2 class="section-title main-font" data-aos="fade-in">Contact <span class="text-blue main-font">Me</span></h2>
-        <div class="card-container">
-          <div class="card" data-aos="fade-in">
-            <i class="fas fa-envelope"></i>
-            <h3>Email</h3>
-            <p>info@jaspartapgoomer.com</p>
-          </div>
-          <div class="card" data-aos="fade-in" data-aos-delay="100">
-            <i class="fab fa-github"></i>
-            <h3>GitHub</h3>
-            <a href="https://github.com/JasprtapGoomer" class="text-blue" target="_blank">Jaspartap Goomer</a>
-          </div>
-          <div class="card" data-aos="fade-in" data-aos-delay="200">
-            <i class="fab fa-linkedin"></i>
-            <h3>LinkedIn</h3>
-            <a href="https://www.linkedin.com/in/jaspartap-goomer-883738275/" class="text-blue" target="_blank">Jaspartap Goomer</a>
-          </div>
+     <!-- CONTACT -->
+  <section id="contact" class="contact">
+    <div class="container">
+      <h2 class="section-title main-font" data-aos="fade-in">Contact <span class="text-blue main-font">Me</span></h2>
+      <div class="card-container">
+        <div class="card" data-aos="fade-in">
+          <i class="fas fa-envelope"></i>
+          <h3>Email</h3>
+          <p>info@jaspartapgoomer.com</p>
         </div>
-        
-        <form id="contact-form" data-aos="zoom-in" data-aos-delay="300">
-          <h2 class="main-font">Send <span class="text-blue main-font">Email</span></h2>
-  
-          <div class="form-group">
-            <input type="text" id="name" name="name" placeholder="Name" required>
-          </div>
-  
-          <div class="form-group">
-            <input type="email" id="email" name="email" placeholder="Your email" required>
-          </div>
-  
-          <div class="form-group">
-            <textarea name="message" id="message" rows="7" placeholder="Message" required></textarea>
-          </div>
-  
-          <button type="submit" class="btn-email">
-            <span class="default">Send</span>
-            <span class="success">
-                <svg viewBox="0 0 16 16">
-                    <polyline points="3.75 9 7 12 13 5"></polyline>
-                </svg>Sent
-            </span>
-            <svg class="trails" viewBox="0 0 33 64">
-                <path d="M26,4 C28,13.3333333 29,22.6666667 29,32 C29,41.3333333 28,50.6666667 26,60"></path>
-                <path d="M6,4 C8,13.3333333 9,22.6666667 9,32 C9,41.3333333 8,50.6666667 6,60"></path>
-            </svg>
-            <div class="plane">
-                <div class="left"></div>
-                <div class="right"></div>
-            </div>
-          </button>
-          <div id="status"></div>
-        </form>
-      </div>
-    </section>
-  
-    <footer id="footer" class="footer">
-      <div class="container">
-        <div class="footer-flex">
-          <img src="src/img/logo.png" alt="logo" id="logo-footer">
-  
-          <div class="footer-icon-links">
-            <a href="https://github.com/JasprtapGoomer" target="_blank"><i class="fab fa-github fa-2x"></i></a>
-            <a href="https://www.linkedin.com/in/jaspartap-goomer-883738275/" target="_blank"><i class="fab fa-linkedin fa-2x"></i></a>
-            <a href="mailto:info@jaspartapgoomer.com"><i class="fas fa-envelope fa-2x"></i></a>
-          </div>
+        <div class="card" data-aos="fade-in" data-aos-delay="100">
+          <i class="fab fa-github"></i>
+          <h3>GitHub</h3>
+          <a href="https://github.com/JasprtapGoomer" class="text-blue" target="_blank">Jaspartap Goomer</a>
+        </div>
+        <div class="card" data-aos="fade-in" data-aos-delay="200">
+          <i class="fab fa-linkedin"></i>
+          <h3>LinkedIn</h3>
+          <a href="https://www.linkedin.com/in/jaspartap-goomer-883738275/" class="text-blue" target="_blank">Jaspartap Goomer</a>
         </div>
       </div>
-    </footer>
-  
-    <!-- Back to top button in corner -->
-    <a id="backToTopBtn" class="btn-blue">
-      <i class="fa fa-chevron-up"></i>
-    </a>
-  
-    <!-- jQuery -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  
-    <!-- Particles.js for hero section -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/particles.js/2.0.0/particles.min.js" integrity="sha512-Kef5sc7gfTacR7TZKelcrRs15ipf7+t+n7Zh6mKNJbmW+/RRdCW9nwfLn4YX0s2nO6Kv5Y2ChqgIakaC6PW09A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-  
-    <!-- GSAP animations -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"></script>
-  
-    <!-- AOS Animations -->
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-    <script>
-      AOS.init();
-    </script>
-  
-    <!-- EmailJS script -->
-    <script type="text/javascript">
-      (function() {
-        emailjs.init("HxVIps9qGv8J28iA9"); // Replace 'YOUR_USER_ID' with your actual user ID from EmailJS
-      })();
-    </script>
-  
-    <script>
-      // Function to send email using EmailJS
-      function sendEmail(e) {
-        e.preventDefault();
-  
-        emailjs.sendForm('service_kis250b', 'template_gyji50l', '#contact-form')
-          .then(function(response) {
-            console.log('SUCCESS!', response.status, response.text);
-            document.getElementById('status').innerHTML = "Email sent successfully!";
-          }, function(error) {
-            console.log('FAILED...', error);
-            document.getElementById('status').innerHTML = "Email sending failed.";
-          });
-  
-        // Clear the form fields
-        document.getElementById('contact-form').reset();
-      }
-  
-      // Attach event listener to the form
-      document.getElementById('contact-form').addEventListener('submit', sendEmail);
-    </script>
-  
-  </body>
-  </html>
+      
+      <form id="contact-form" data-aos="zoom-in" data-aos-delay="300">
+        <h2 class="main-font">Send <span class="text-blue main-font">Email</span></h2>
+
+        <div class="form-group">
+          <input type="text" id="name" name="name" placeholder="Name" required>
+        </div>
+
+        <div class="form-group">
+          <input type="email" id="email" name="email" placeholder="Your email" required>
+        </div>
+
+        <div class="form-group">
+          <textarea name="message" id="message" rows="7" placeholder="Message" required></textarea>
+        </div>
+
+        <button type="submit" class="btn-email">
+          <span class="default">Send</span>
+          <span class="success">
+              <svg viewBox="0 0 16 16">
+                  <polyline points="3.75 9 7 12 13 5"></polyline>
+              </svg>Sent
+          </span>
+          <svg class="trails" viewBox="0 0 33 64">
+              <path d="M26,4 C28,13.3333333 29,22.6666667 29,32 C29,41.3333333 28,50.6666667 26,60"></path>
+              <path d="M6,4 C8,13.3333333 9,22.6666667 9,32 C9,41.3333333 8,50.6666667 6,60"></path>
+          </svg>
+          <div class="plane">
+              <div class="left"></div>
+              <div class="right"></div>
+          </div>
+        </button>
+        <div id="status"></div>
+      </form>
+    </div>
+  </section>
+
+  <footer id="footer" class="footer">
+    <div class="container">
+      <div class="footer-flex">
+        <img src="src/img/logo.png" alt="logo" id="logo-footer">
+
+        <div class="footer-icon-links">
+          <a href="https://github.com/JasprtapGoomer" target="_blank"><i class="fab fa-github fa-2x"></i></a>
+          <a href="https://www.linkedin.com/in/jaspartap-goomer-883738275/" target="_blank"><i class="fab fa-linkedin fa-2x"></i></a>
+          <a href="mailto:info@jaspartapgoomer.com"><i class="fas fa-envelope fa-2x"></i></a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to top button in corner -->
+  <a id="backToTopBtn" class="btn-blue">
+    <i class="fa fa-chevron-up"></i>
+  </a>
+
+  <!-- jQuery -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+  <!-- Particles.js for hero section -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/particles.js/2.0.0/particles.min.js" integrity="sha512-Kef5sc7gfTacR7TZKelcrRs15ipf7+t+n7Zh6mKNJbmW+/RRdCW9nwfLn4YX0s2nO6Kv5Y2ChqgIakaC6PW09A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+  <!-- GSAP animations -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"></script>
+
+  <!-- AOS Animations -->
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+
+  <!-- EmailJS script -->
+  <script type="text/javascript">
+    (function() {
+      emailjs.init("HxVIps9qGv8J28iA9"); // Replace 'YOUR_USER_ID' with your actual user ID from EmailJS
+    })();
+  </script>
+
+  <script>
+    // Function to send email using EmailJS
+    function sendEmail(e) {
+      e.preventDefault();
+
+      emailjs.sendForm('service_kis250b', 'template_gyji50l', '#contact-form')
+        .then(function(response) {
+          console.log('SUCCESS!', response.status, response.text);
+          document.getElementById('status').innerHTML = "Email sent successfully!";
+        }, function(error) {
+          console.log('FAILED...', error);
+          document.getElementById('status').innerHTML = "Email sending failed.";
+        });
+
+      // Clear the form fields
+      document.getElementById('contact-form').reset();
+    }
+
+    // Attach event listener to the form
+    document.getElementById('contact-form').addEventListener('submit', sendEmail);
+  </script>
+
+</body>
+</html>
